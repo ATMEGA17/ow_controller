@@ -132,7 +132,7 @@ class ConfigConfig(AppConfig):
         register_menu_group(
             position=20,
             config={
-                'label': 'Devices',
+                'label': 'Devices!!!',
                 'model': get_model_name('config', 'Device'),
                 'name': 'changelist',
                 'icon': 'ow-device',
