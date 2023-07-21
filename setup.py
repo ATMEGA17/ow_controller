@@ -41,29 +41,7 @@ if sys.argv[-1] == 'publish':
 
 setup(
     name="openwisp-controller",
-    version=get_version(),
-    license="GPL3",
-    author="Federico Capoano",
-    author_email="federico.capoano@gmail.com",
-    description="OpenWISP 2 Controller",
-    long_description=open("README.rst").read(),
-    url="http://openwisp.org",
-    download_url="https://github.com/openwisp/openwisp-controller/releases",
-    platforms=["Platform Independent"],
-    keywords=["django", "netjson", "openwrt", "networking", "openwisp"],
-    packages=find_packages(exclude=['tests*', 'docs*']),
-    include_package_data=True,
     zip_safe=False,
     install_requires=get_install_requires(),
-    classifiers=[
-        'Development Status :: 3 - Alpha',
-        'Environment :: Web Environment',
-        'Topic :: Internet :: WWW/HTTP',
-        'Topic :: System :: Networking',
-        'Intended Audience :: Developers',
-        'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
-        'Operating System :: OS Independent',
-        'Framework :: Django',
-        'Programming Language :: Python :: 3',
-    ],
+
 )
